@@ -225,6 +225,10 @@ module.exports = {
               },
               {
                 loader: require.resolve('sass-loader'),
+                options: {
+                  data: '@import "variables";',
+                  includePaths: ['src/css/']
+                }
               },
               {
                 loader: require.resolve('postcss-loader'),
